@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sisnanceiro - Carrinho</title>
+</head>
+
+<body>
+    <section name="wrapper">
+
+        <div>
+            <ul>
+                <li>Produtos</li>
+                <li>Carrinho</li>
+            </ul>
+        </div>
+
+        <div>
+            <form name="busca-produto" method="post">
+                <div class="row form-group">
+                    <label>Pesquisar</label>
+                    <input type="text" name="Carrinho_pesquisar" id="Carrinho_pesquisar" />
+                </div>
+                <div class="row form-group">
+                    <label>Código</label>
+                    <input type="text" name="Carrinho_codigo" id="Carrinho_codigo" />
+                </div>
+                <div class="row form-group">
+                    <label>Quantidade</label>
+                    <input type="text" name="Carrinho_quantidade" id="Carrinho_quantidade" />
+                </div>
+                <div class="row form-group">
+                    <label>Valor unit.</label>
+                    <input type="text" name="Carrinho_valor_unit" id="Carrinho_valor_unit" />
+                </div>
+                <div class="row form-group">
+                    <label>Desconto</label>
+                    <input type="text" name="Carrinho_valor_desconto" id="Carrinho_valor_desconto" />
+                    <select name="Carrinho_tipo_desconto">
+                        <option value="R$">R$</option>
+                        <option value="%">%</option>
+                    </select>
+                </div>
+                <div class="row form-group">
+                    <label>Valor total</label>
+                    <input type="text" name="Carrinho_pesquisar" id="Carrinho_pesquisar" />
+                </div>
+                <input type="submit" value="ADD PRODUTO" />
+                <button>TOTAL: R$</button>
+            </form>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cód.</th>
+                        <th>Qtd.</th>
+                        <th>Produto</th>
+                        <th>Desc.</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
